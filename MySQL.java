@@ -1,5 +1,7 @@
 
-/** Project:Lab2 Database Assignment Space Game Data stored in MySQL, and Mongo
+
+/**
+ * Project:Lab2 Database Assignment Space Game Data stored in MySQL, and Mongo
  * Purpose Details: Using CRUD to operate for both databases MySQL, and Mongo.
  * Course:IST242
  * Author:Christina Yang
@@ -110,8 +112,7 @@ public class MySQL {
     }
 
     /**
-     * Updates health of a ship in the MySQL database.
-     * Update newHealth value for the ship
+     * Update the health for the ship
      */
     private static void updateShip(Connection connection, int id, int newHealth) {
         String sql = "UPDATE ship SET health = ? WHERE id = ?";
